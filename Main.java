@@ -37,6 +37,29 @@ public class TaskEntries {
         }
     }
 }
+      
+public class TaskEntries {
+    public static void main(String[] args) {
+        ArrayList<String> tasks = new ArrayList<>();
+        
+        tasks.add("Task 1: Wow a task");
+        tasks.add("Task 2: I wonder what it could be");
+        tasks.add("Task 3: Hopefully this works");
+        
+        tasks.removeIf(task -> task.contains("completed"));
+        for (String task : tasks) {
+            System.out.println(task);
+        }
+        tasks.clearIf(task -> task.contains("completed"));
+      
+        
+        for (String task : tasks) {
+            System.out.println(task);
+          
+          
+        }
+    }
+}
     public class TaskEntries {
     private String taskName;
     public static void main(String[] args) {
