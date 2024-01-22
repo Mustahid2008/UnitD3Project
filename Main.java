@@ -60,6 +60,19 @@ public class TaskEntries {
         }
     }
 }
+public class TaskOrganization {
+    public static void main(String[] args) {
+        HashMap<String, String> tasksByDueDate = new HashMap<>();
+        
+        tasksByDueDate.put("Task 1", "2022-10-20");
+        tasksByDueDate.put("Task 2", "2022-10-25");
+        tasksByDueDate.put("Task 3", "2022-10-22");
+        
+        for (String task : tasksByDueDate.keySet()) {
+            System.out.println(task + " is due on " + tasksByDueDate.get(task));
+        }
+    }
+}
     public class TaskEntries {
     private String taskName;
     public static void main(String[] args) {
@@ -74,13 +87,54 @@ public class TaskEntries {
         for (String task : tasks) {
         System.out.println(task);
           
+tasks.removeIf(task -> task.contains("completed"));
+          
               }
-          }
-      }
+          }import java.util.HashMap;
+
+public class TaskOrganization {
+    public static void main(String[] args) {
+        HashMap<String, String> tasksByDueDate = new HashMap<>();
+        
+        tasksByDueDate.put("Task 1", "2022-10-20");
+        tasksByDueDate.put("Task 2", "2022-10-25");
+        tasksByDueDate.put("Task 3", "2022-10-22");
+        
+        for (String task : tasksByDueDate.keySet()) {
+            System.out.println(task + " is due on " + tasksByDueDate.get(task));
+        }
+    }
+}
+      
+public class Main {
+    private static void createAndShowGUI() {
+        JFrame jFrame = new JFrame("Task-maker-counter thingy");
+        jFrame.setLayout(new FlowLayout());
+        jFrame.setSize(500, 360);
+        jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        JLabel label = new JLabel("The thing");
+        Border border = BorderFactory.createLineBorder(Color.BLACK);
+        label.setBorder(border);
+        label.setPreferredSize(new Dimension(150, 100);
+        label.setText("Graphical Interface for Tasks");
+        label.setHorizontalAlignment(JLabel.CENTER);
+        label.setVerticalAlignment(JLabel.CENTER);
         jFrame.add(label);
         jFrame.setVisible(true);
     }
-    
+
+    public static void main(String[] args) {
+        createAndShowGUI();
+    }
+}
+      }
+      
+
+        jFrame.add(label);
+        jFrame.setVisible(true);
+    }
+      
   public static void main(String[] args) {
     createAndShowGUI();
     
